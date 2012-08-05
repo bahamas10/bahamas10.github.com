@@ -1,0 +1,21 @@
+html,body,* {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.container {
+	padding: 10px;
+	margin: 10px;
+	width: 900px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1.title {
+	font-size: 50pt;
+}
+
+#github-data {
+}
+
