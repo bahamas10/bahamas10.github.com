@@ -7,7 +7,7 @@ html,body,* {
 .container {
 	padding: 10px;
 	margin: 10px;
-	width: 900px;
+	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -19,3 +19,17 @@ h1.title {
 #github-data {
 }
 
+.github-project {
+	display: inline-block;
+	vertical-align: top;
+
+	border: 3px solid black;
+	width: 270px;
+
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 0px 10px;
+	padding-bottom: 20px;
+
+	background-color: #f4f4f4;
+}

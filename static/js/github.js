@@ -47,6 +47,7 @@ function __my_data(data) {
 
       // List the projects
       for (var i in d[type]) {
+        s += '<div class="github-project">';
         s += '<h3><a href="' + d[type][i].html_url + '">' + d[type][i].name + '</a></h3>';
         s += '<blockquote>' + d[type][i].description + '</blockquote>';
         var watchers = d[type][i].watchers;
@@ -57,7 +58,7 @@ function __my_data(data) {
         if (d[type][i].language) s += 'written in ' + d[type][i].language + '<br />';
         var dobj = new Date(d[type][i].created_at);
         s += 'created on ' + (dobj.getMonth()+1) + '/' + dobj.getDate() + '/' + dobj.getFullYear();
-        s += '<br /><br />';
+        s += '</div>';
       }
     }
 
