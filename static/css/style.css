@@ -23,13 +23,10 @@ h1.title {
 	display: inline-block;
 	vertical-align: top;
 
-	border: 3px solid black;
 	width: 270px;
 
 	margin-left: 20px;
 	margin-top: 10px;
 	padding: 0px 10px;
 	padding-bottom: 20px;
-
-	background-color: #f4f4f4;
 }

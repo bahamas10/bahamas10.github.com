@@ -23,6 +23,7 @@ function github(username) {
 function __my_data(data) {
   (function($) {
     data = data.data;
+    var columns = 3;
 
     // Hardcoded goodness
     var $elem = $('#github-data'),
@@ -59,6 +60,7 @@ function __my_data(data) {
         var dobj = new Date(d[type][i].created_at);
         s += 'created on ' + (dobj.getMonth()+1) + '/' + dobj.getDate() + '/' + dobj.getFullYear();
         s += '</div>';
+        if (i%columns == columns - 1) s += '<hr class="divider">';
       }
     }
 
