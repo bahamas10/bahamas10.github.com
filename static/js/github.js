@@ -16,7 +16,6 @@ function github(username) {
     g.src = 'https://api.github.com/users/' + username + '/repos?callback=__my_data&per_page=100';
     s.parentNode.insertBefore(g,s);
   }(document, 'script'));
-
 }
 
 // Callback for github
@@ -43,7 +42,9 @@ function __my_data(data) {
     for (var type in d) {
       // Make the title
       s += '<h1>';
-      s += (type === 'repos') ? 'My Projects on GitHub' : 'Forked Projects';
+      s += (type === 'repos')
+         ? 'My Projects on GitHub (' + d[type].length + ')'
+         : 'Forked Projects (' + d[type].length + ')';
       s += '</h1><br />';
 
       // List the projects
